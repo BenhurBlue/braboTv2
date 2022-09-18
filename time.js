@@ -1,3 +1,4 @@
+
 let time = [
     {
         nome: 'cassio',
@@ -58,9 +59,15 @@ let time = [
     {
         nome: 'Vitor Perereira',
         camisa:null ,
-        posição:'Tecnico'
+        posição:'Tecnico',
+        
     }
 ]
 
-console.log(time.length);
-console.table(time);
+for (const key in time) {
+    time[key]['multiplo']=time[key]['camisa'] * 2;
+
+
+
+    }
+    console.table(time);
